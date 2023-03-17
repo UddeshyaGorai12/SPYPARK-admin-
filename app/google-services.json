@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "7715993056",
+    "project_id": "eazyinn-a98f7",
+    "storage_bucket": "eazyinn-a98f7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:7715993056:android:56f85bedff7bf769d3a785",
+        "android_client_info": {
+          "package_name": "com.example.eazyinn"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "7715993056-oiacttnmorqcb7ji4uhbkqootp2g6vhk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCCBgHJB5jrr5F-olw-jjQ1qeZBSicgp-Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "7715993056-oiacttnmorqcb7ji4uhbkqootp2g6vhk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

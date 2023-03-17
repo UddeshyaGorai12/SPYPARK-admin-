@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/layout_root"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity"
+    android:background="#3EA6FA">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayoutProfile"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="130dp"
+                app:cardCornerRadius="50dp">
+                <ImageView
+                    android:id="@+id/profileImageUpload"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/user"/>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="640dp"
+                android:layout_marginTop="140dp"
+                app:cardCornerRadius="40dp"
+                app:cardElevation="40dp">
+
+                <RelativeLayout
+                    android:id="@+id/contactRelativeLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="20dp">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="6dp"
+                        app:srcCompat="@android:drawable/ic_menu_my_calendar" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="70dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Name"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/nameTextView"
+                        android:layout_width="300dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="70dp"
+                        android:layout_marginTop="30dp"
+                        android:textSize="12dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/emailRelativeLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="80dp">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="6dp"
+                        app:srcCompat="@android:drawable/ic_menu_myplaces" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="70dp"
+                        android:layout_marginTop="10dp"
+                        android:text="USN:"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/USNTextView"
+                        android:layout_width="300dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="70dp"
+                        android:layout_marginTop="30dp"
+                        android:textSize="12dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/designationRelativeLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="140dp">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="6dp"
+                        app:srcCompat="@android:drawable/ic_menu_call" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="70dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Contact:"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/contactTextView"
+                        android:layout_width="300dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="70dp"
+                        android:layout_marginTop="30dp"
+                        android:textSize="12dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/companyRelativeLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="200dp">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="6dp"
+                        app:srcCompat="@android:drawable/sym_action_email" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="70dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Email:"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/emailTextView"
+                        android:layout_width="300dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="70dp"
+                        android:layout_marginTop="30dp"
+                        android:textSize="12dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/experienceRelativeLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="260dp">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="6dp"
+                        app:srcCompat="@android:drawable/ic_menu_agenda" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="70dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Experience:"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/experienceTextView"
+                        android:layout_width="300dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="70dp"
+                        android:layout_marginTop="30dp"
+                        android:textSize="12dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/collegeRelativeLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="320dp">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="6dp"
+                        app:srcCompat="@android:drawable/ic_menu_edit" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="70dp"
+                        android:layout_marginTop="10dp"
+                        android:text="College:"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/collegeTextView"
+                        android:layout_width="300dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="70dp"
+                        android:layout_marginTop="30dp"
+                        android:textSize="12dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/streamRelativeLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="380dp">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="6dp"
+                        app:srcCompat="@android:drawable/ic_menu_today" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="70dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Stream:"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/streamTextView"
+                        android:layout_width="300dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="70dp"
+                        android:layout_marginTop="30dp"
+                        android:textSize="12dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/profileBriefRelativeLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:layout_marginTop="440dp">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="6dp"
+                        app:srcCompat="@android:drawable/ic_menu_myplaces" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="70dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Profile Brief:"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/profileBriefTextView"
+                        android:layout_width="300dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="70dp"
+                        android:layout_marginTop="30dp"
+                        android:textSize="12dp" />
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/updateProfileButton"
+                    android:layout_width="140dp"
+                    android:layout_height="56dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="520dp"
+                    android:background="@drawable/rectangle"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:text="Update Profile"
+                    android:textColor="@color/white"
+                    android:textSize="13dp" />
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
